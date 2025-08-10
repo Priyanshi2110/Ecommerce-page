@@ -1,0 +1,307 @@
+.main_t {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main_t::after {
+    content: "";
+    flex: 1;
+    border: 2px solid #FFC7D1;
+    height: 1px;
+}
+
+.main_t::before {
+    content: "";
+    flex: 1;
+    border: 2px solid #FFC7D1;
+    height: 1px;
+}
+
+.trending_btn {
+    background-color: #770015;
+}
+
+.trending_btn:hover {
+    box-shadow: 1px 1px 10px black;
+}
+
+.size-t:hover {
+    background-color: #770015;
+    color: white;
+    cursor: pointer;
+}
+
+.product-image-area {
+    position: relative;
+}
+
+.trend_icon {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+}
+
+.product-image-area .image-area {
+    overflow: hidden;
+    z-index: -1;
+}
+
+.product-image-area:hover .trend_icon {
+    display: flex;
+}
+
+.product-image-area:hover .trend {
+    filter: blur(10px);
+}
+
+.size .size-t {
+    height: 34px;
+    width: 34px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dash_i {
+    position: relative;
+}
+
+.dash_t {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: black;
+    padding: auto;
+    height: 50px;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.ad_img{
+    position: relative;
+}
+.ad_icon{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    padding: auto;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+    
+    .size-t {
+        height: 24px;
+        width: 24px;
+        font-size: 10px;
+        padding: 2px;
+    }
+    .ad_icon{
+        gap:30px;
+    }
+    .ad_icon img{
+    height: 80px;
+}
+
+}
+.sub_img{
+    background: linear-gradient(to right top, #ab001e, #9e001c, #91001a, #840017, #770015);
+}
+.sub_t{
+    font-family: Playfair Display;
+    font-size: 36px;
+    font-weight: 600;
+    font-style: Semibold;
+    color: white;
+}
+.sub_box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub_icon{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mail_btn{
+    padding: 5px 5px;
+    border: transparent;
+}
+.form_b{
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+}
+.form_t{
+    color: #770015;
+}
+.foot{
+    position: relative;
+    height: 400.33px;
+    background-color: #E0DFDE;
+}
+.lowerfoot{
+    position: absolute;
+    height: 68px;
+    bottom: 0;
+    background-color: #20050A;
+}
+.p_font{
+    font-family: Montserrat;
+    font-weight: 500;
+}
+.main_text{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+.social{
+    display:flex;
+    gap:3px;
+}
+.s_text p{
+    font-size: 18px;
+    font-weight: 600;
+    color: #770015;
+}
+.s_text ul{
+    list-style: none;
+    padding: 3px;
+}
+.s_textt p{
+    margin-top: 1px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #770015;
+}
+.s_textt ul{
+    list-style: none;
+    padding: 8px;
+}
+.s_textt li{
+    padding: 7px;
+}
+.contact{
+    display: flex;
+    gap: 3px;
+}
+.contact .i{
+    margin-top: 8px;
+    color: rgb(65, 64, 64);
+    font-size: 15px;
+}
+@media screen and (max-width: 480px){
+    
+    .ad_icon img{
+    height: 80px;
+}
+.sub_t{
+    font-family: Playfair Display;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: Semibold;
+    color: white;
+}
+.mail_btn{
+    border: transparent;
+}
+.main_text{
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+.f_text p{
+    font-size: 10px;
+    margin-left: 2px;
+    padding-left: 2px;
+}
+.social img{
+    height: 20px;
+}
+.s_text p{
+    font-size: 15px;
+}
+.s_text{
+    font-size: 10px;
+}
+.s_textt p{
+    font-size: 15px;
+}
+.s_textt ul{
+   font-size: 10px;
+}
+
+    
+}
+    
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    
+    .ad_icon img{
+    height: 80px;
+}
+.sub_t{
+    font-family: Playfair Display;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: Semibold;
+    color: white;
+}
+.main_text{
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+.f_text p{
+    font-size: 10px;
+    margin-left: 2px;
+    padding-left: 4px;
+}
+.social img{
+    height: 20px;
+}
+.s_text p{
+    font-size: 15px;
+}
+.s_text{
+    font-size: 10px;
+}
+.s_textt p{
+    font-size: 15px;
+}
+.s_textt ul{
+   font-size: 10px;
+}
+
+    
+}
+
+    
